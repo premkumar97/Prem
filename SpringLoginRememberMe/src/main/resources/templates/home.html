@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css"/>
+<script src="main.js"></script>
+<title>Skava</title>
+</head>
+<body>
+	<div class="Model">
+		<form th:action="@{/abcd}" method="post">
+			Model Name<input type="text" name="modelname" class="modelname" id="modelname"/>
+			<div class="Model-design">
+				<div class="Models0">
+					<input type="text" name="name" class="name" id="name"/> 
+					<select>
+						<option value="text">Text Field</option>
+						<option value="drop">Drop-Down</option>
+						<option value="radio">Radio</option>
+						<option value="checkbox">Checkbox</option>
+					</select>
+					<a onclick="myFunction()"   class="plus-button" style="z-index:1">+</a>
+					<p id="demo"/>
+				</div>
+			</div>
+			<div><input type="submit" value="Submit"/></div>
+		</form>
+	</div>
+</body>
+</html>
+
